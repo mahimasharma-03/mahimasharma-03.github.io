@@ -1,7 +1,193 @@
 <!DOCTYPE html>
 <html>
+<head>  
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Mahima's Portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9c072341b4.js" crossorigin="anonymous"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <section class="header" id="home-section">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="#home-section">HOME</a></li>
+                    <li> <a href="#about-section">ABOUT</a></li>
+                    <li> <a href="#projects-section">PROJECTS</a></li>
+                    <li> <a href="#blogs-section">BLOGS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> Welcome to my Portfolio! </h1>
+            <p> Hello, I am Mahima Sharma! </p>
+            <p> Software Engineer | Cloud Developer | AI/ML Enthusiast | Data-Driven Individual</p>
+            <p> With 3 years of experience, I am making my place in the IT industry at a rapid speed. <br> I have worked on multiple tech stacks and keep up with the ever-changing technology trends!</p>
+            <a href="#about-section" class="text-btn"> Know More </a>
+        </div>
+    </section>
+    <hr class="solid" id="about-section">
+    <section class="about-class">
+        <div class="row">
+            <div class="about-col">
+                <img src="images/logopic.jpg">
+            </div>
+            <div class="about-col">
+                <h2>About</h2>
+                <p>As a Software Engineer, I have been given the opportunity to work and explore many skill sets. I am a passionate learner who always finds something interesting to work upon and creates POCs. After completing my Bachelor's Degree in Computer Science, I was employed by Accenture where I've been working as a Cloud Analyst with extensive exposure to AWS Cloud and python.</p>
+                <p>I have been extremely enthusiatic about AWS cloud which has led me build an expertise in developing and deploying many AWS services. Python is another skill which I have been building over the years. While working on any project, the scope that python offers really fascinates me.</p>
+                <p>Currently, I am developing my skills in the Machine Learning and Artificial Intelligence domain! That's right! After AWS and python, I have planned to master AI/ML! I have already taken up multiple courses and certifications to begin my journey. Now, I am researching and working POCs to get a better understanding on these skills!</p>
+                <p>I am highly motivated and determined learn and explore new skills. In order to succeed, I believe you need to keep yourself up to date with the most recent trends!</p>
+            </div>
+        </div>
+    </section>
+    <hr class="solid">
+    <section class="projects-class" id="projects-section">
+        <h2>Projects</h2>
+        <p>Any new skill attained can be justified with the right practical implementation. <br> Here are a few POCs which I've created and worked upon.</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <img src="images/project1-img.jpg" class="proj-images">
+            <div class="numbertext">1 / 3</div>
+            <div class="proj-images-hover">
+                <div class="proj-images-hover-text">
+                    <p> Amazon Comprehend uses natural language processing (NLP) to extract insights about the content of documents. <br><br>
+                    It develops insights by recognizing the entities, key phrases, language, sentiments, and other common elements in a document.</p>
+                    <a href="https://www.linkedin.com/posts/mahima-sharma-842841109_aws-amazon-machinelearning-activity-6932659635514417152-Xu6r?utm_source=share&utm_medium=member_desktop" target="_blank" class="proj-btn">Read More</a>
+                </div>
+            </div>
+            </div>
+            <div class="mySlides fade">
+            <img src="images/project3-img.jpg" class="proj-images">
+            <div class="numbertext">2 / 3</div>
+            <div class="proj-images-hover">
+                <div class="proj-images-hover-text">
+                    <p> Amazon Comprehend uses natural language processing (NLP) to extract insights about the content of documents. <br><br>
+                    It develops insights by recognizing the entities, key phrases, language, sentiments, and other common elements in a document.</p>
+                    <a href="https://www.linkedin.com/posts/mahima-sharma-842841109_aws-amazon-machinelearning-activity-6934084559428804608-JE64?utm_source=share&utm_medium=member_desktop" target="_blank" class="proj-btn">Read More</a>
+                </div>
+            </div>
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="images/project2-img.jpg" class="proj-images">
+            <div class="numbertext">3 / 3</div>
+            <div class="proj-images-hover">
+                <div class="proj-images-hover-text">
+                    <p> Amazon Comprehend uses natural language processing (NLP) to extract insights about the content of documents. <br><br>
+                    It develops insights by recognizing the entities, key phrases, language, sentiments, and other common elements in a document.</p>
+                    <a href="https://www.linkedin.com/posts/mahima-sharma-842841109_aws-amazon-machinelearning-activity-6936283387649220608-EBiN?utm_source=share&utm_medium=member_desktop" target="_blank" class="proj-btn">Read More</a>
+                </div>
+            </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- <br> -->
+          <div class="proj-row">
+          <div class="proj-column">
+            <img class="demo cursor" src="images/project1-img.jpg" style="width:100%" onclick="currentSlide(1)">
+          </div>
+          <div class="proj-column">
+            <img class="demo cursor" src="images/project3-img.jpg" style="width:100%" onclick="currentSlide(2)">
+          </div>
+          <div class="proj-column">
+            <img class="demo cursor" src="images/project2-img.jpg" style="width:100%" onclick="currentSlide(3)">
+          </div>
+        </div>      
+    </section>
+    <hr class="solid">
+    <section class="blogs-class" id="blogs-section">
+        <h2> Blogs</h2>
+        <p>Knowledge is mastered when it is noted down. <br> Here are a few blogs that I have written along my journey.</p>
+
+        <div class="blog-row">
+            <div class="blog-col">
+                <h3>Blog 1</h3>
+                <p>Coming Soon!</p>
+            </div>
+            <div class="blog-col">
+                <h3>Blog 2</h3>
+                <p>Coming Soon!</p>
+            </div>
+            <div class="blog-col">
+                <h3>Blog 3</h3>
+                <p>Coming Soon!</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h5>Thank you for visting my profile!</h5>
+        <p>You can reach out to me at:</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/mahima-sharma-842841109/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/mahimasharma-03" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/m_sha005" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+    <i class="fa-solid fa-arrow-up" id="backtotop" onclick="topFunc()"></i>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        var backtopbtn = document.getElementById("backtotop");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backtopbtn.style.display = "block";
+            } else {
+                backtopbtn.style.display = "none";
+            }
+        }
+
+        function topFunc() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+
+    </script>
+
 </body>
 </html>
